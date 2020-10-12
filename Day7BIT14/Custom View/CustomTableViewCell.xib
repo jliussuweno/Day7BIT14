@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customTableViewCell" rowHeight="176" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="Day7BIT14" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="606" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="606" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f0V-NF-ZEL">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="162"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gmx-8x-v4i">
+                                <rect key="frame" x="0.0" y="0.0" width="182" height="162"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gmx-8x-v4i" firstAttribute="leading" secondItem="f0V-NF-ZEL" secondAttribute="leading" id="33j-qO-NXi"/>
+                            <constraint firstItem="gmx-8x-v4i" firstAttribute="centerY" secondItem="f0V-NF-ZEL" secondAttribute="centerY" id="E4m-vz-GWJ"/>
+                            <constraint firstAttribute="trailing" secondItem="gmx-8x-v4i" secondAttribute="trailing" id="WAU-ZN-Sxc"/>
+                            <constraint firstItem="gmx-8x-v4i" firstAttribute="centerX" secondItem="f0V-NF-ZEL" secondAttribute="centerX" id="gco-Jt-zLI"/>
+                            <constraint firstItem="gmx-8x-v4i" firstAttribute="top" secondItem="f0V-NF-ZEL" secondAttribute="top" id="yvs-MJ-L19"/>
+                            <constraint firstAttribute="bottom" secondItem="gmx-8x-v4i" secondAttribute="bottom" id="znb-VM-9be"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KV8-Vg-Z7A">
+                        <rect key="frame" x="182" y="0.0" width="424" height="176"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uhl-bt-itt">
+                                <rect key="frame" x="20" y="10" width="384" height="156"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAA-I0-vo0">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="73"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMf-3R-m62">
+                                        <rect key="frame" x="0.0" y="83" width="384" height="73"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Uhl-bt-itt" firstAttribute="centerX" secondItem="KV8-Vg-Z7A" secondAttribute="centerX" id="1D2-rm-nrc"/>
+                            <constraint firstItem="Uhl-bt-itt" firstAttribute="centerY" secondItem="KV8-Vg-Z7A" secondAttribute="centerY" id="8jP-2F-fIv"/>
+                            <constraint firstAttribute="bottom" secondItem="Uhl-bt-itt" secondAttribute="bottom" constant="10" id="FuX-48-lew"/>
+                            <constraint firstItem="Uhl-bt-itt" firstAttribute="leading" secondItem="KV8-Vg-Z7A" secondAttribute="leading" constant="20" id="LP4-CD-pjA"/>
+                            <constraint firstItem="Uhl-bt-itt" firstAttribute="top" secondItem="KV8-Vg-Z7A" secondAttribute="top" constant="10" id="Le5-ys-CIJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Uhl-bt-itt" secondAttribute="trailing" constant="20" id="OX7-k4-yBI"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KV8-Vg-Z7A" secondAttribute="trailing" id="05y-pD-n3b"/>
+                    <constraint firstItem="f0V-NF-ZEL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3ru-hl-vof"/>
+                    <constraint firstItem="f0V-NF-ZEL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="66f-ow-hOL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="f0V-NF-ZEL" secondAttribute="bottom" constant="3" id="DEx-lx-Z0r"/>
+                    <constraint firstItem="KV8-Vg-Z7A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qx8-Hb-0RR"/>
+                    <constraint firstAttribute="bottom" secondItem="KV8-Vg-Z7A" secondAttribute="bottom" id="RIZ-GE-5aM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="KV8-Vg-Z7A" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.7" id="UhL-CM-CMW"/>
+                <constraint firstItem="f0V-NF-ZEL" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.3" id="eC1-fC-Bav"/>
+            </constraints>
+            <connections>
+                <outlet property="clubImageView" destination="gmx-8x-v4i" id="ClQ-Ep-IUr"/>
+                <outlet property="detailsLabel" destination="dMf-3R-m62" id="bDa-3D-2hk"/>
+                <outlet property="itemLabel" destination="dAA-I0-vo0" id="bCY-Sf-37M"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="151.33928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
